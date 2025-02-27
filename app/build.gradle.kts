@@ -60,14 +60,17 @@ dependencies {
     implementation(libs.androidx.ui)
     implementation(libs.androidx.ui.graphics)
 
-    implementation (libs.androidx.lifecycle.viewmodel.compose)
+    implementation(libs.androidx.lifecycle.viewmodel.compose)
     //image loading lib
     implementation(libs.coil.compose)
 
     //Dagger - Hilt
-    //(libs.hilt.android.v2511)
-    implementation (libs.hilt.android)
+    implementation(libs.hilt.android)
     ksp(libs.hilt.compiler)
+    implementation(libs.androidx.hilt.navigation.compose)
+
+    //runtime permission lib
+    implementation(libs.androidx.foundation.permissions)
 
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
