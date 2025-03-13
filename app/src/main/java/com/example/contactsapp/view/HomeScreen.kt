@@ -14,9 +14,9 @@ fun HomeScreen(
     modifier: Modifier = Modifier,
     state: ContactUiState
 ) {
-    Box(modifier = modifier.fillMaxSize()) {
+    Box(modifier = modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
         AnimatedVisibility(visible = state.loading) {
-            CircularProgressIndicator(modifier.align(alignment = Alignment.Center))
+            CircularProgressIndicator()
         }
 
         ContactsList(
